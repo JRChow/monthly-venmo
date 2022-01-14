@@ -34,7 +34,7 @@ def main(now):
   for friend in friends:
     name = friend["name"]
     id = friend["id"]
-    description = "HBO Max for the month of " + month + " — Sent from JrZ's GitHub Actions"
+    description = "HBO Max for the month of " + month + " — Sent by JrZ's GitHub Actions"
     amount = 14.99 / 2
     message = f"""Good news old sport!
 
