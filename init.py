@@ -15,7 +15,7 @@ def main(now):
   for var in env_vars:
     actualVars.append(get_env(var))
 
-  access_token, chat_id, bot_token, p_friend_id = actualVars
+  access_token, chat_id, bot_token, p_friend_id, d_friend_id = actualVars
 
   month = get_month(now)
   venmo = Venmo(access_token)
@@ -26,6 +26,10 @@ def main(now):
       "name": "XP",
       "id": p_friend_id,
     },
+    {
+      "name": "YD",
+      "id": d_friend_id,
+    },
   ]
 
   successfulRequests = []
@@ -35,7 +39,7 @@ def main(now):
     name = friend["name"]
     id = venmo.get_user_id_by_username(friend["id"])
     description = "HBO Max for the month of " + month + " — Sent by JrZ's GitHub Actions"
-    amount = 14.99 / 2
+    amount = 14.99 / (len(friends) + 1)
     message = f"""Good news old sport!
 
 I have successfully requested money from {name}.
