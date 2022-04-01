@@ -74,7 +74,7 @@ class Venmo:
 
     def request_money(self, id, amount, description, callback = None):
         # Returns a boolean: true if successfully requested
-        return self.client.payment.request_money(amount, description, id, PaymentPrivacy.PRIVATE, None, callback)
+        return self.client.payment.request_money(amount, description, id, PaymentPrivacy.PUBLIC, None, callback)
 
 class Telegram:
     def __init__(self, bot_token, chat_id):
