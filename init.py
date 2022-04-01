@@ -35,9 +35,10 @@ def main(now):
   successfulRequests = []
   expectedRequests = len(friends)
 
-  for friend in friends:
+  for friend in friends[1:]:
     name = friend["name"]
     id = venmo.get_user_id_by_username(friend["id"])
+    print(id)
     description = "HBO Max for the month of " + month + " — Sent by JrZ's GitHub Actions"
     amount = 14.99 / (len(friends) + 1)
     message = f"""Good news old sport!
