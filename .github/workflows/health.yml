@@ -39,3 +39,4 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           P_FRIEND_ID: ${{ secrets.P_FRIEND_ID }}
           D_FRIEND_ID: ${{ secrets.D_FRIEND_ID }}
+          D_FRIEND_ID: ${{ secrets.G_FRIEND_ID }}
