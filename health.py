@@ -9,7 +9,7 @@ def main(now):
   print(f'🕘 Monthly health check running on {date} at {time}.\n')
 
   print("🔍 Verifying environment variables...")
-  numOfExpected =  5
+  numOfExpected =  6
   envVarsAreDefined = verify_env_vars(env_vars, numOfExpected)
 
   if envVarsAreDefined:
