@@ -31,7 +31,7 @@ def main(now):
 #      "name": "YD",
 #      "id": d_friend_id,
 #    },
-#    {
+    {
       "name": "GL",
       "id": g_friend_id,
     },
