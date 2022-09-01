@@ -15,7 +15,7 @@ def main(now):
   for var in env_vars:
     actualVars.append(get_env(var))
 
-  access_token, chat_id, bot_token, p_friend_id, d_friend_id = actualVars
+  access_token, chat_id, bot_token, p_friend_id, d_friend_id, g_friend_id = actualVars
 
   month = get_month(now)
   venmo = Venmo(access_token)
@@ -26,9 +26,14 @@ def main(now):
       "name": "XP",
       "id": p_friend_id,
     },
-    {
-      "name": "YD",
-      "id": d_friend_id,
+# On pause until payment resumes
+#    {
+#      "name": "YD",
+#      "id": d_friend_id,
+#    },
+#    {
+      "name": "GL",
+      "id": g_friend_id,
     },
   ]
 
